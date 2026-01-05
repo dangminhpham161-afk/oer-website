@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OER – Tài nguyên Giáo dục Mở</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f7fb;
+      color: #1f2937;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+    header h1 { font-size: 42px; margin-bottom: 10px; }
+    header p { font-size: 18px; opacity: 0.9; }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      z-index: 100;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 15px;
+      gap: 25px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1e3a8a;
+      font-weight: 500;
+    }
+    nav a:hover { color: #2563eb; }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .section-title h2 {
+      font-size: 32px;
+      color: #1e3a8a;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card h3 { color: #1e3a8a; }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TÀI NGUYÊN GIÁO DỤC MỞ (OER)</h1>
+  <p>Nền tảng chia sẻ tri thức – Học tập mở – Học tập suốt đời</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#gioithieu">Giới thiệu</a></li>
+    <li><a href="#loai">Loại OER</a></li>
+    <li><a href="#loiich">Lợi ích</a></li>
+    <li><a href="#giayphep">Giấy phép</a></li>
+    <li><a href="#taolap">Tạo lập</a></li>
+  </ul>
+</nav>
+
+<section id="gioithieu">
+  <div class="section-title"><h2>OER là gì?</h2></div>
+  <div class="card">
+    <p>
+      OER (Open Educational Resources) là các tài nguyên học tập được cung cấp miễn phí,
+      cho phép người dùng truy cập, sử dụng, chỉnh sửa và chia sẻ lại hợp pháp thông qua
+      các giấy phép mở như Creative Commons.
+    </p>
+  </div>
+</section>
+
+<section id="loai">
+  <div class="section-title"><h2>Các loại tài nguyên OER</h2></div>
+  <div class="grid">
+    <div class="card"><h3>📘 Văn bản</h3><p>Giáo trình, tài liệu PDF, bài giảng</p></div>
+    <div class="card"><h3>🎞️ Video</h3><p>Video bài giảng, học liệu đa phương tiện</p></div>
+    <div class="card"><h3>📊 Slide</h3><p>PowerPoint, Google Slides</p></div>
+    <div class="card"><h3>📝 Bài tập</h3><p>Ngân hàng câu hỏi, bài tập thực hành</p></div>
+  </div>
+</section>
+
+<section id="loiich">
+  <div class="section-title"><h2>Lợi ích của OER</h2></div>
+  <div class="grid">
+    <div class="card"><h3>💸 Tiết kiệm chi phí</h3><p>Học tập miễn phí, dễ tiếp cận</p></div>
+    <div class="card"><h3>🚀 Chủ động học tập</h3><p>Tự do học mọi lúc, mọi nơi</p></div>
+    <div class="card"><h3>🤝 Chia sẻ tri thức</h3><p>Xây dựng cộng đồng học tập mở</p></div>
+  </div>
+</section>
+
+<section id="giayphep">
+  <div class="section-title"><h2>Giấy phép Creative Commons</h2></div>
+  <div class="card">
+    <p>
+      Creative Commons cho phép người tạo tài nguyên chia sẻ quyền sử dụng
+      với cộng đồng thông qua các điều kiện như ghi nguồn, không thương mại,
+      hoặc chia sẻ cùng giấy phép.
+    </p>
+    <p><strong>Ví dụ:</strong> CC BY, CC BY-SA, CC BY-NC-SA</p>
+  </div>
+</section>
+
+<section id="taolap">
+  <div class="section-title"><h2>Cách tạo lập tài nguyên OER</h2></div>
+  <div class="grid">
+    <div class="card"><h3>1️⃣ Xác định mục tiêu</h3><p>Ai sử dụng? Dùng cho môn học nào?</p></div>
+    <div class="card"><h3>2️⃣ Xây dựng nội dung</h3><p>Biên soạn kiến thức học tập</p></div>
+    <div class="card"><h3>3️⃣ Thiết kế</h3><p>Slide, tài liệu, video</p></div>
+    <div class="card"><h3>4️⃣ Gắn giấy phép</h3><p>Creative Commons</p></div>
+    <div class="card"><h3>5️⃣ Chia sẻ</h3><p>Website, OER Commons, GitHub</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 | OER Website – Tác giả: Minh Pham Dang | CC BY-NC-SA 4.0</p>
+</footer>
+
+</body>
+</html>
